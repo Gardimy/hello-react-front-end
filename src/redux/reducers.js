@@ -15,7 +15,9 @@ const greetingReducer = (state = initialState, action) => {
     case FETCH_RANDOM_GREETING_REQUEST:
       return { ...state, loading: true, error: null };
     case FETCH_RANDOM_GREETING_SUCCESS:
-      return { ...state, greeting: action.payload, loading: false, error: null };
+      return {
+        ...state, greeting: action.payload, loading: false, error: null,
+      };
     case FETCH_RANDOM_GREETING_FAILURE:
       return { ...state, loading: false, error: action.error };
     default:

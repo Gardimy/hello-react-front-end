@@ -5,8 +5,8 @@ import Greeting from './components/Greeting';
 function App() {
   return (
     <Routes>
-		 <Route path="/" element={<Greeting/>} />
-          <Route path="/" exact component={Greeting} />
+      <Route path="/" element={<Greeting />} />
+      <Route path="/" exact component={Greeting} />
     </Routes>
   );
 }

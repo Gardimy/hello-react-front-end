@@ -8,7 +8,6 @@ export const fetchRandomGreeting = () => async (dispatch) => {
   dispatch({ type: FETCH_RANDOM_GREETING_REQUEST });
 
   try {
-    // Make an API request to get a random greeting. Replace 'your_api_endpoint' with your actual API URL.
     const response = await axios.get('your_api_endpoint');
 
     dispatch({
